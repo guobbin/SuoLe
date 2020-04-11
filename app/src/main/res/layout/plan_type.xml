@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_light">
+
+        <TextView
+            android:id="@+id/title_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="40dp"
+            android:text="凡事预则立"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/title_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不预则废"
+            android:padding="40dp"
+            android:gravity="right"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/day_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dip"
+            android:drawableLeft="@drawable/day_plan_imag"
+            android:text="日计划"
+            />
+        <Button
+            android:id="@+id/week_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="周计划"
+            android:drawablePadding="10dip"
+            android:drawableLeft="@drawable/week_plan_imag"
+            android:paddingLeft="10dp"
+
+            android:gravity="center_vertical"
+            />
+        <Button
+            android:id="@+id/month_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dip"
+            android:drawableLeft="@drawable/month_plan_imag"
+            android:text="月计划"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/year_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dip"
+            android:drawableLeft="@drawable/year_plan_imag"
+
+            android:text="年计划"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>

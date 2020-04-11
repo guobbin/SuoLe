@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <Switch
+        android:id="@+id/switch_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="接收通知"/>
+    <View style="@style/bg_line"/>
+    <Switch
+        android:id="@+id/switch_notify_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="通知显示详情"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="8dp"
+        android:text="开启“接收通知”，我们将第一时间为您推送精彩内容并开启时件提醒，开启“通知显示详情”，可以查看详细信息。\n"/>
+    <Switch
+        android:id="@+id/switch_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="声音"/>
+    <View style="@style/bg_line"/>
+    <Switch
+        android:id="@+id/switch_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="震动"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:padding="8dp"
+        android:text="设置是否需要声音或者震动提醒。\n"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/course_menu_item_load"
+        android:title="@string/load_course"
+        android:icon="@drawable/ic_action_load_course"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/course_menu_item_add"
+        android:title="@string/write_course"
+        android:icon="@drawable/ic_action_add"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/course_menu_item_open"
+        android:title="@string/open_web"
+        android:icon="@drawable/ic_action_open_web"
+        app:showAsAction="never|withText"/>
+</menu>

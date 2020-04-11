@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myinfo"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="我的资料"/>
+        <item
+            android:id="@+id/nav_notify"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="消息通知"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="账号安全"/>
+        <item
+            android:id="@+id/nav_link"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="辅助链接"/>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="帮助与反馈"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="关于所乐"/>
+        <item
+            android:id="@+id/nav_quit"
+            android:icon="@drawable/ic_action_name_pressed"
+            android:title="注销"/>
+    </group>
+
+
+</menu>

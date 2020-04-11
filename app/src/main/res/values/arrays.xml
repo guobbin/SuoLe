@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="splash_desc">
+        <item>乐在分享</item>
+        <item>乐在沟通</item>
+        <item>各有所乐</item>
+        <item>Make Life Fun</item>
+    </string-array>
+    <array name="splash_icon">
+        <item>@drawable/splash_iv_first</item>
+        <item>@drawable/splash_iv_second</item>
+        <item>@drawable/splash_iv_third</item>
+        <item>@drawable/splash_iv_forth</item>
+    </array>
+    <array name="splash_bg">
+        <item>@color/light_green_500</item>
+        <item>@color/amber_500</item>
+        <item>@color/red_400</item>
+        <item>@color/blue_400</item>
+    </array>
+</resources>

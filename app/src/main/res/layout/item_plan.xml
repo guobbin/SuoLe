@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="plan"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:shadowColor="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/rm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color3"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/rm_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color3"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rm_time"/>
+
+</RelativeLayout>

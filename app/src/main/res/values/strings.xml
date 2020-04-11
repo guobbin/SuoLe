@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SuoLe</string>
+    <string name="myInfo_button">Me</string>
+    <string name="news_button">NEWS</string>
+    <string name="mingle_button">MINGLE</string>
+    <string name="function_button">FUNC</string>
+    <string name="help_and_feedback">帮助与反馈</string>
+    <string name="title_activity_my_info">MyInfo</string>
+    <string name="app_name_c">所乐</string>
+    <string name="register_tv">立即注册>> </string>
+    <string name="news_label">校园新闻</string>
+    <string name="myInformation">我的资料</string>
+    <string name="load_course">导入课表</string>
+    <string name="write_course">手动输入课表</string>
+    <string name="open_web">打开教务处网址</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="remind_data">提醒时间</string>
+</resources>

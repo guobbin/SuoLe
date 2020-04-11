@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey_200">
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/manageM_button"
+            style="@style/common_button_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/learning_button"
+            android:layout_alignStart="@+id/learning_button"
+            android:background="@mipmap/asset"/>
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/learning_button"-->
+            <!--android:text="学习"-->
+            <!--style="@style/common_button_style"/>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/plan_button_func"
+            android:background="@mipmap/plan"
+            style="@style/common_button_style"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/whether_button_func"
+            android:layout_below="@id/plan_button_func"
+            android:background="@mipmap/weather"
+            style="@style/common_button_style"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

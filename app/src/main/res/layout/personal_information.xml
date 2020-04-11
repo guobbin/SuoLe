@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F0F3F6">
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout"
+                      android:id="@+id/ll_prophoto">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/person"
+                android:id="@+id/pet_picture"
+                />
+            <ImageView style="@style/img_arrow"
+                android:layout_marginLeft="272dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout"
+                      android:id="@+id/ll_petName1">
+
+            <TextView style="@style/usertext"
+                      android:text="昵称"
+                />
+
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_petName1"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+        <!-- 分割线 -->
+        <LinearLayout style="@style/mid_layout"
+                      android:id="@+id/ll_sex">
+
+            <TextView style="@style/usertext"
+                      android:text="性别" />
+
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_sex"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+
+
+
+        <View style="@style/bg_line"/>
+
+        <LinearLayout style="@style/mid_layout"
+                      android:id="@+id/ll_birthday">
+            <TextView style="@style/usertext"
+                      android:text="生日"
+                />
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_birthday"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- 无圆角-->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout style="@style/mid_layout"
+                      android:id="@+id/ll_school">
+            <TextView style="@style/usertext"
+                      android:text="学校校区" />
+
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_school"
+                />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+
+
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/mid_layout"
+                      android:id="@+id/ll_grade">
+            <TextView style="@style/usertext"
+                      android:text="入学年份" />
+
+            <EditText style="@style/usertext"
+                      android:id="@+id/ev_grade"
+                      android:maxLength="4"
+                      android:inputType="number"
+                      android:background="@null"
+                />
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/mid_layout"
+                      android:id="@+id/ll_academy">
+            <TextView style="@style/usertext"
+                      android:text="学院" />
+
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_academy"
+                />
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+
+
+
+
+
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout"
+                      android:id="@+id/ll_major">
+            <TextView style="@style/usertext"
+                      android:text="专业" />
+
+            <TextView style="@style/usertext"
+                      android:id="@+id/tv_major"
+                />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

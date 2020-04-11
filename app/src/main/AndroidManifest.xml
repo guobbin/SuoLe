@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bignerdranch.android.myapplication">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="clU9C5igYaumGzlNBNvzc1AussrG6OrB"/>
+        <activity android:name=".LoginActivity"
+                  android:theme="@style/AppThemeNoBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeNoBar"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".Personal.AboutActivity"
+            android:label="关于所乐">
+        </activity>
+
+        <activity
+            android:name=".Personal.NotifyActivity"
+            android:label="消息通知">
+        </activity>
+
+        <activity
+            android:name=".CourseActivity"
+            android:label="课表">
+        </activity>
+
+        <activity android:name=".WriteCommentActivity"
+                  android:label="评论">
+        </activity>
+
+        <activity
+            android:name=".PasswordInterActivity"
+            android:label="账号安全">
+        </activity>
+
+        <activity
+            android:name=".FirstComeActivity">
+        </activity>
+
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:label="密码修改">
+        </activity>
+
+        <activity
+            android:name=".CommentActivity"
+            android:label="正文">
+        </activity>
+
+        <activity
+            android:name=".WriteTextActivity"
+            android:label="说说">
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="注册"
+            android:parentActivityName=".LoginActivity">
+        </activity>
+
+        <activity
+            android:name=".NewsDisplayActivity"
+            android:label="@string/news_label"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+
+        <activity android:name=".MyInfomationActivity">
+        </activity>
+        <activity
+            android:name=".WAPfunctions.WeatherActivity"
+            android:theme="@style/AppThemeNoBar"/>
+
+        <service
+            android:name=".WAPfunctions.service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".WAPfunctions.PlanActivity"
+            android:theme="@style/AppThemeNoBar"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".WAPfunctions.PlanEdit"
+            android:theme="@style/AppThemeNoBar">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.bignerdranch.android.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <service
+            android:name=".WAPfunctions.service.AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            />
+
+        <activity
+            android:name=".WAPfunctions.ScanPlan"
+            android:theme="@style/AppThemeNoBar"
+            />
+
+        <service
+            android:name=".WAPfunctions.service.HeadService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service android:name="com.baidu.location.f"
+                 android:enabled="true"
+                 android:process=":remote">
+        </service>
+        <activity
+            android:name=".Account.AppendActivity"
+            android:theme="@style/AppThemeNoBar">
+        </activity>
+        <activity
+            android:name=".Account.MainActivity"
+            android:theme="@style/AppThemeNoBar">
+        </activity>
+    </application>
+</manifest>
